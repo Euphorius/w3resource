@@ -1,3 +1,4 @@
+
 """ Find the GCD (Great common divisor) of two positive integers"""
 
 def GCD(a,b):
@@ -15,7 +16,9 @@ def GCD(a,b):
 
         if b % i == 0:
             list_2.add(i)
+            
     gcd = max(set.intersection(list_1, list_2))
+    
     if gcd == 1:
         return 'There is no common divisor of {} and {} different than 1'.format(a,b)
 
